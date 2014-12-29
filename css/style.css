@@ -1,0 +1,445 @@
+/* ==================================================
+   CSS Imports
+================================================== */
+
+@import url("reset.css");
+@import url("columns.css");
+@import url("typography.css");
+@import url("menu.css");
+@import url("animate.css");
+
+/* ==================================================
+   Icon Fonts
+================================================== */
+
+@import url("fonts/fontawesome/font-awesome.css");
+
+/* ==================================================
+   Google Fonts
+================================================== */
+
+@import url("http://fonts.googleapis.com/css?family=Fira+Sans:300,300italic,400,400italic,500,500italic,700,700italic");
+
+/* ==================================================
+   Global Styles
+================================================== */
+* {
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box
+}
+
+html {
+    width:100%;
+    height:100%;
+    overflow:auto;
+    -webkit-font-smoothing:antialiased;
+    -webkit-text-size-adjust:100%;
+    -ms-text-size-adjust:100%
+}
+
+body {
+    font-family:"Fira Sans",Arial,Verdana,Helvetica,sans-serif;
+    font-size:17px;
+    color:#666;
+    background:#16A085;
+    line-height:28px;
+    font-weight:300;
+    z-index:auto;
+    text-rendering:optimizeLegibility;
+    vertical-align:baseline
+}
+
+::selection {
+    background:#16A085;
+    color:#FFF
+}
+
+::-moz-selection {
+    background:#16A085;
+    color:#FFF
+}
+
+a {
+    color:#16A085;
+    text-decoration:none
+}
+
+a:hover {
+    color:#222
+}
+
+/* ==================================================
+   Images
+================================================== */
+img {
+    -webkit-backface-visibility:hidden;
+    -moz-backface-visibility:hidden;
+    -ms-backface-visibility:hidden
+}
+
+img.imgright {
+    float:right;
+    width:100%;
+    max-width:300px;
+    margin:0 0 20px 20px
+}
+
+img.imgleft {
+    float:left;
+    width:100%;
+    max-width:300px;
+    margin:0 20px 20px 0
+}
+
+/* ==================================================
+   Colours
+================================================== */
+.bg1 {
+    background:url(../images/mountain.jpg) no-repeat scroll top center;
+    background-size:cover
+}
+
+.bg2 {
+    background:#FFF
+}
+
+.bg3 {
+    background:#16A085
+}
+
+/* ==================================================
+   Layout Styles
+================================================== */
+.container {
+    width:100%;
+    padding:0 30px;
+    min-width:280px;
+    line-height:26px
+}
+
+.container .bodycontainer {
+    margin:0 auto;
+    width:100%;
+    max-width:1200px
+}
+
+/* ==================================================
+   Sticky Menu
+================================================== */
+.stickydiv {
+    position:relative;
+    z-index:999;
+    width:100%
+}
+
+.stickydiv.stuck {
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:999
+}
+
+/* ==================================================
+   Sections
+================================================== */
+#header {
+    position:relative;
+    width:100%;
+    height:540px;
+    z-index:10
+}
+#header2 {
+    position:relative;
+    width:100%;
+    height:400px;
+    z-index:10
+}
+
+#movie {
+    position:relative;
+    top:0;
+    left:0;
+    z-index:-10;
+    background-color:transparent!important;
+    height:100%;
+    width:100%;
+    overflow:hidden
+}
+
+#movie video {
+    position:relative;
+    top:0;
+    left:0;
+    z-index:-10
+}
+
+video {
+    display:inline-block;
+    object-fit:contain
+}
+
+#headline {
+    font-size:34px;
+    color:#FFF;
+    z-index:100;
+    margin:auto;
+    width:100%;
+    height:120px;
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    text-align:center
+}
+
+#headline h1 {
+    width:100%;
+    max-width:700px;
+    color:#FFF;
+    font-family: inherit;
+    font-size:62px;
+    line-height:62px;
+    font-weight:600;
+    letter-spacing:-2px;
+    margin:auto;
+    text-align:center
+}
+
+#headline p {
+    font-size:30px;
+    margin:0;
+    font-weight:500;
+    font-style:italic
+}
+
+
+
+#topcont {
+    padding:5px 0;
+    text-align:left
+}
+
+#topcont #topleft {
+    float:left
+}
+
+#topcont #topleft h1 {
+    font-size:30px;
+    line-height:30px;
+    margin:0px;
+    font-weight:600
+}
+
+#topcont #topleft h1 a {
+    color:#444
+}
+
+#topcont #topleft h1 a span {
+    color:#16A085;
+    margin:0px
+}
+
+
+#topcont #topleft #socialmedia ul {
+    float:left;
+    margin:20px 0px
+}
+
+#topcont #topleft #socialmedia ul li {
+    display:block;
+    float:left;
+    list-style-type:none;
+    padding:0
+}
+
+#topcont #topleft #socialmedia ul li a {
+    float:left;
+    font-size:22px;
+    line-height:40px;
+    min-width:40px;
+    margin:0 0 0 6px;
+    text-align:center;
+    color:#FFF;
+    background:#CCC;
+    -webkit-border-radius:30px;
+    -moz-border-radius:30px;
+    border-radius:30px
+}
+
+#topcont #topleft #socialmedia ul li a:hover {
+    background:#16A085
+}
+
+#topcont #topright {
+    float:right
+}
+
+#topcont #topright #socialmedia ul {
+    float:right;
+    margin:20px 0px
+}
+
+#topcont #topright #socialmedia ul li {
+    display:block;
+    float:left;
+    list-style-type:none;
+    padding:0
+}
+
+#topcont #topright #socialmedia ul li a {
+    float:left;
+    font-size:22px;
+    line-height:40px;
+    min-width:40px;
+    margin:0 0 0 6px;
+    text-align:center;
+    color:#FFF;
+    background:#CCC;
+    -webkit-border-radius:30px;
+    -moz-border-radius:30px;
+    border-radius:30px
+}
+
+#topcont #topright #socialmedia ul li a:hover {
+    background:#16A085
+}
+
+#menucont {
+    padding:0
+}
+
+#menucont p {
+    margin:0
+}
+
+#gallerycont {
+    padding:130px 0;
+    color:#FFF
+}
+
+#gallerycont h1 {
+    width:100%;
+    max-width:700px;
+    color:#FFF;
+    font-size:62px;
+    line-height:62px;
+    font-weight:600;
+    letter-spacing:-2px;
+    margin:0 0 20px
+}
+
+#gallerycont p {
+    font-size:20px;
+    margin:0;
+    font-style:italic
+}
+
+#maincont {
+    padding:20px 0
+}
+
+#maincont #mainleft {
+    float:left;
+    width:70%;
+    padding-right:20px
+}
+
+#maincont #mainright {
+    float:left;
+    width:30%;
+    padding-left:20px
+}
+
+#footercont {
+    padding:40px 0;
+    color:rgba(255,255,255,0.5);
+    font-style:italic;
+    text-align:right
+}
+
+#footercont a {
+    color:#FFF
+}
+
+#footercont p {
+    margin:0
+}
+
+/* ==================================================
+   Responsive Media Queries - Tablets
+================================================== */
+@media screen and (max-width: 768px) {
+img.imgright {
+    float:none;
+    width:100%;
+    max-width:300px;
+    margin:0 0 20px
+}
+
+img.imgleft {
+    float:none;
+    width:100%;
+    max-width:300px;
+    margin:0 0 20px
+}
+
+#topcont #topleft {
+    float:left;
+    width:100%
+}
+
+#topcont #topright {
+    float:left;
+    width:100%
+}
+
+#topcont #topright #socialmedia ul {
+    float:left;
+    margin:15px 0 0
+}
+
+#topcont #topright #socialmedia ul li a {
+    margin:0 6px 0 0
+}
+
+#gallerycont {
+    padding:80px 0
+}
+
+#gallerycont h1 {
+    font-size:42px;
+    line-height:42px;
+    letter-spacing:-1px
+}
+
+#gallerycont p {
+    font-size:18px
+}
+
+#maincont {
+}
+
+#maincont #mainleft {
+    width:100%;
+    padding-right:0
+}
+
+#maincont #mainright {
+    width:100%;
+    padding-left:0
+}
+
+#footercont {
+    text-align:left
+}
+}
+
+/* ==================================================
+   Responsive Media Queries - Mobiles
+================================================== */
+@media screen and (max-width: 480px) {
+#topcont #topleft h1 a span {
+    display:none
+}
+}

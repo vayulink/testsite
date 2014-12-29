@@ -14,6 +14,7 @@ $(document).ready(function() {
 		}
         $html.removeClass('mobile');
     }).trigger('resize');
+    	$("#content").load("home.html");
 });
 
 /** jQuery Easing **/
@@ -60,3 +61,16 @@ $(document).ready(function() {
 	wow.init();
 });
 
+$(document).ready(function(){
+$('.menu li a').click(function(e){
+	var page = $(this).attr('href');
+	$('.menu li').removeClass('active');
+   var $parent = $(this).parent();
+	   if (!$parent.hasClass('active')) {
+			$parent.addClass('active');
+      }
+   e.preventDefault();
+	$("#content").load(page);
+});
+
+});

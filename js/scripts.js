@@ -34,7 +34,7 @@ $(document).ready(function() {
 	$(".menutitle").click(function() {
 		$(".menu").slideToggle(350,'easeInOutExpo', function() {
 			$(this).attr('style', '').toggleClass('open');
-			$('.menutitle p strong').text($(this).is(':visible') ? 'Close Menu' : 'Open Menu');
+			$('.menutitle p strong').text($(this).is(':visible') ? 'Close' : 'Menu');
 		});
 		$(this).toggleClass("active");
 	});
@@ -70,6 +70,8 @@ $('.menu li a').click(function(e){
 			$parent.addClass('active');
       }
    e.preventDefault();
+   $(".menu").slideToggle;
+   $(".menutitle").toggleClass("active");
 	$("#content").load(page);
 });
 

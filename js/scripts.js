@@ -81,4 +81,4 @@ $(document).ready(function(){
 setTimeout(function(){
     document.getElementById("myVideo").play();
 }, 3000);
-)};
+});

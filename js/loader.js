@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$("#content").load("contact.html");
+	$("#content").load("home.html");
 
 });
 

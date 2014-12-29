@@ -69,9 +69,9 @@ $('.menu li a').click(function(e){
 	   if (!$parent.hasClass('active')) {
 			$parent.addClass('active');
       }
+   $(".menutitle").click();
    e.preventDefault();
-   $(".menu").slideToggle;
-   $(".menutitle").toggleClass("active");
+
 	$("#content").load(page);
 });
 
